@@ -1,0 +1,9 @@
+FROM dart:alpine
+
+LABEL version = "1.0.1"
+
+WORKDIR /calctest3/dart
+
+COPY . /calctest3/dart/
+
+CMD ["dart", "calc.py"]

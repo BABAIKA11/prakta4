@@ -1,0 +1,9 @@
+FROM python:alpine
+
+LABEL version = "1.0.1"
+
+WORKDIR /gametest3/python
+
+COPY . /gametest3/python/
+
+CMD ["python", "RockPaperScissorsGame.py"]
